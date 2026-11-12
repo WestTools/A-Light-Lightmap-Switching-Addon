@@ -15,7 +15,7 @@ normally you only get one baked lighting setup per scene. this lets you have as 
 - bake as many lighting **sets** as you want in one scene
 - each set has its own list of objects to turn **on** and **off**, so you can put the sun in one set and the lamps in another
 - **Bake All Sets** bakes every set in one go
-- switch sets in game from a button, a trigger, or your own script
+- switch sets in game from a button, a UnityEvent, or your own script (like a trigger)
 - each set has an **On Activate** event so you can change the skybox, fog, sounds and stuff at the same time
 - every set gets its own copy of the lightmaps, so baking again doesnt overwrite your other sets
 
@@ -68,7 +68,7 @@ public class NightButton : MonoBehaviour
 }
 ```
 
-turn on **Apply On Start** and pick a **Start Set** if you want the game to start on a certain set
+turn on **Apply On Start** and pick a **Start Set** if you want the game to start on a certain set. its on by default and starts on the first set
 
 ## good to know
 
